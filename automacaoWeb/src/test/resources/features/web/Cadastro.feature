@@ -1,6 +1,6 @@
 #language: pt
 #encoding: UTF-8
-#author: marcos.barbosa
+#author: daniel.gustavo
 #date: 08/07/2020
 #version: 1.0
 

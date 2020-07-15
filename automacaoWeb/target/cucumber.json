@@ -1,0 +1,514 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: daniel.gustavo"
+      },
+      {
+        "line": 4,
+        "value": "#date: 08/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0"
+      }
+    ],
+    "line": 7,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 32025637300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Acessar perfil e alterar sexo",
+        "description": "",
+        "id": "alterar-dados-do-perfil;acessar-perfil-e-alterar-sexo",
+        "after": [
+          {
+            "result": {
+              "duration": 1387685500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3409443399,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou logado no sistema",
+            "match": {
+              "location": "HomeSteps.queEstouLogadoNoSistema()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2440777000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "acesso meu perfil",
+            "match": {
+              "location": "AlteracaoSteps.acessoMeuPerfil()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1605990301,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "altero credenciais de nome",
+            "match": {
+              "location": "AlteracaoSteps.alteroCredenciaisDeNome()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 252349201,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "valido a alteracao",
+            "match": {
+              "location": "AlteracaoSteps.salvoAAlteracao()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@web"
+          },
+          {
+            "line": 9,
+            "name": "@alteracao"
+          }
+        ]
+      }
+    ],
+    "name": "alterar dados do perfil",
+    "description": "",
+    "id": "alterar-dados-do-perfil",
+    "keyword": "Funcionalidade",
+    "uri": "web/Alteracao.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: daniel.gustavo"
+      },
+      {
+        "line": 4,
+        "value": "#date: 08/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0"
+      }
+    ],
+    "line": 7,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 23527016901,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Realizar o cadastro com sucesso de um cliente válido",
+        "description": "",
+        "id": "realizar-cadastro-no-site;realizar-o-cadastro-com-sucesso-de-um-cliente-válido",
+        "after": [
+          {
+            "result": {
+              "duration": 1186372400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1211603900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que clico no botao \"Register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Register",
+                  "offset": 20
+                }
+              ],
+              "location": "HomeSteps.queClicoNoBotao(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 4115717499,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "realizo o cadastro do cliente",
+            "match": {
+              "location": "CadastroSteps.realizoCadastroDoCliente()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 92200199,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "visualizo a mensagem \"Your registration completed\" na tela",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your registration completed",
+                  "offset": 22
+                }
+              ],
+              "location": "CadastroSteps.visualizoAMensagemNaTela(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@web"
+          },
+          {
+            "line": 9,
+            "name": "@cadastro"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar cadastro no site",
+    "description": "",
+    "id": "realizar-cadastro-no-site",
+    "keyword": "Funcionalidade",
+    "uri": "web/Cadastro.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#encoding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: daniel.gustavo"
+      },
+      {
+        "line": 4,
+        "value": "#date: 14/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0"
+      }
+    ],
+    "line": 7,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 19275267600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "realizar compra com sucesso utilizando cartao de credito",
+        "description": "",
+        "id": "compra-com-cartao-de-credito;realizar-compra-com-sucesso-utilizando-cartao-de-credito",
+        "after": [
+          {
+            "result": {
+              "duration": 1173754900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4043068000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou logado no sistema",
+            "match": {
+              "location": "HomeSteps.queEstouLogadoNoSistema()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2951510001,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que clico no produto escolhido",
+            "match": {
+              "location": "CompraSteps.queClicoNoProdutoEscolhido()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3879969100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "acesso o carrinho de compras",
+            "match": {
+              "location": "CompraSteps.acessoOCarrinhoDeCompras()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6180219100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "preencho informaçoes de pagamento",
+            "match": {
+              "location": "CompraSteps.preenchoInformaçoesDePagamento()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 157700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "valido a compra finalizada",
+            "match": {
+              "location": "CompraSteps.validoACompraFinalizada()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@web"
+          },
+          {
+            "line": 9,
+            "name": "@compra"
+          }
+        ]
+      }
+    ],
+    "name": "compra com cartao de credito",
+    "description": "",
+    "id": "compra-com-cartao-de-credito",
+    "keyword": "Funcionalidade",
+    "uri": "web/Compra.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      },
+      {
+        "line": 2,
+        "value": "#enconding: UTF-8"
+      },
+      {
+        "line": 3,
+        "value": "#author: daniel.gustavo"
+      },
+      {
+        "line": 4,
+        "value": "#date: 03/07/2020"
+      },
+      {
+        "line": 5,
+        "value": "#version: 1.0"
+      }
+    ],
+    "line": 7,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 25919496099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeWeb()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Realizar login na aplicação com usuário cadastrado",
+        "description": "",
+        "id": "validar-login-da-aplicação;realizar-login-na-aplicação-com-usuário-cadastrado",
+        "after": [
+          {
+            "result": {
+              "duration": 1239300900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterWeb()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1060705300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que clico no botao \"Log in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 20
+                }
+              ],
+              "location": "HomeSteps.queClicoNoBotao(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 215514599,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "preencho os dados de login com usuário \"cadastrado\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cadastrado",
+                  "offset": 40
+                }
+              ],
+              "location": "LoginSteps.preenchoOsDadosDeLoginComUsuário(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1335829600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico em Log in",
+            "match": {
+              "location": "LoginSteps.clicoEmLogIn()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 310260100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "visualizo a tela inicial com meu usuario logado",
+            "match": {
+              "location": "HomeSteps.visualizoATelaInicialComMeuUsuarioLogado()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@login"
+          },
+          {
+            "line": 9,
+            "name": "@web"
+          }
+        ]
+      }
+    ],
+    "name": "Validar Login da aplicação",
+    "description": "",
+    "id": "validar-login-da-aplicação",
+    "keyword": "Funcionalidade",
+    "uri": "web/Login.feature"
+  }
+]

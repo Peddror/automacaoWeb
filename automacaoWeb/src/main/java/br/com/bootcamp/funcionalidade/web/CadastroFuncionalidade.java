@@ -1,6 +1,6 @@
 package br.com.bootcamp.funcionalidade.web;
 
-import br.com.bootcamp.bean.commons.SeleniumRobot;
+import br.com.bootcamp.commons.SeleniumRobot;
 import br.com.bootcamp.pages.web.CadastroPage;
 import br.com.bootcamp.settings.BaseTest;
 import com.github.javafaker.Faker;
@@ -18,7 +18,7 @@ public class CadastroFuncionalidade extends BaseTest {
         this.seleniumRobot = new SeleniumRobot();
     }
 
-    public void preencheDadosERegistra(){
+    public void preencheDadosERegistra() {
         String senha = this.faker.internet().password();
         wait.until(ExpectedConditions.elementToBeClickable(this.cadastroPage.getBtnRegister()));
         this.cadastroPage.getRbGenderM().click();
@@ -30,7 +30,7 @@ public class CadastroFuncionalidade extends BaseTest {
         this.cadastroPage.getBtnRegister().click();
     }
 
-    public String retornaMensagem(){
-       return this.seleniumRobot.pegarValorTexto(this.cadastroPage.getMsgResult());
+    public String retornaMensagem() {
+        return this.seleniumRobot.pegarValorTexto(this.cadastroPage.getMsgResult());
     }
 }

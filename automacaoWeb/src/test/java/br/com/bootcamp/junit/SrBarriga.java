@@ -14,7 +14,7 @@ public class SrBarriga {
 	public void dropDownSelect() {
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 		driver.get("https://srbarriga.herokuapp.com/login");
-		driver.manage().window().maximize();
+		driver.manage().window().fullscreen();
 		Random r = new Random();
 		String email = "" + r.nextInt(100);
 
